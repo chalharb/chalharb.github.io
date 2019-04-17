@@ -17,19 +17,66 @@
 </head>
 <body>
 <div class="">
-    <div class="columns">
+    <div class="columns is-marginless">
         <div class="column is-one-fifth sidebar">
             <aside class="menu">
-                <ul class="menu-list">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Projects</a></li>
-                    <li><a>Contact</a></li>
+                <ul id="sidebar-navigation" class="menu-list">
+                    <li><a class="is-active" href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </aside>
         </div>
-        <div class="column">
-            <h1 class="title" style="height:100vh">Hello Logan</h1>
+        <div class="column is-offset-one-fifth is-paddingless">
+            <section id="home" class="hero is-success is-fullheight main-section">
+                <div class="hero-body">
+                    <div class="container">
+                        <h1 class="title">
+                            Home
+                        </h1>
+                        <h2 class="subtitle">
+                            Fullheight subtitle
+                        </h2>
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="hero is-info is-fullheight main-section">
+                <div class="hero-body">
+                    <div class="container">
+                        <h1 class="title">
+                            About
+                        </h1>
+                        <h2 class="subtitle">
+                            Fullheight subtitle
+                        </h2>
+                    </div>
+                </div>
+            </section>
+            <section id="projects" class="hero is-warning is-fullheight main-section">
+                <div class="hero-body">
+                    <div class="container">
+                        <h1 class="title">
+                            Projects
+                        </h1>
+                        <h2 class="subtitle">
+                            Fullheight subtitle
+                        </h2>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="hero is-danger is-fullheight main-section">
+                <div class="hero-body">
+                    <div class="container">
+                        <h1 class="title">
+                            Contact
+                        </h1>
+                        <h2 class="subtitle">
+                            Fullheight subtitle
+                        </h2>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 </div>

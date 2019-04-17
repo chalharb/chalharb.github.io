@@ -2,4 +2,11 @@
 
 .sidebar {
     background-color: lightgray;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    height:100vh;
+    .menu {
+        width: 100%;
+    }
 }
