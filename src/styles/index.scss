@@ -7,15 +7,32 @@ $color4: #263238;
 $color5: #263238;
 $color6: #959DA8;
 
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:300,400');
+$open-sans: 'Open Sans', sans-serif;
+$lora: 'Lora', serif;
+
 .splash{
     background: url("../assets/bg-img.jpg") center center;
     background-size: cover;
 
     &__title, &__pretitle, &__subtitle {
         color: white;
+        font-family: $open-sans;
+        //line-height: 1.1;
     }
+    &__pretitle, &__subtitle {
+        font-weight: 300;
+    }
+
     &__title {
-        font-size: 4em;
+        font-size: 5em;
+    }
+
+    &__pretitle {
+        font-size: 2.5em;
+    }
+    &__subtitle {
+        font-size: 2em;
     }
 }
 
