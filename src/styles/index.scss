@@ -1,12 +1,28 @@
-@import "./vendor/bulma";
+@import "vendor/bulma/bulma";
 
-.sidebar {
-    background-color: lightgray;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    height:100vh;
-    .menu {
-        width: 100%;
+$color1: #263238;
+$color2: #424242;
+$color3: #37474f;
+$color4: #263238;
+$color5: #263238;
+$color6: #959DA8;
+
+.splash{
+    background: url("../assets/bg-img.jpg") center center;
+    background-size: cover;
+
+    &__title, &__pretitle, &__subtitle {
+        color: white;
+    }
+    &__title {
+        font-size: 4em;
+    }
+}
+
+.footer {
+    background-color: $color3;
+    color: white;
+    a {
+        color: $color6;
     }
 }

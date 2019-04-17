@@ -1,34 +1,15 @@
 require('normalize.css/normalize.css');
 require('./styles/index.scss');
 
-function isInView() {
-
-}
+import scrollSpy from 'simple-scrollspy'
 
 window.onload = function () {
-    let navLinks = document.querySelectorAll("#sidebar-navigation a");
-    let section = document.querySelectorAll(".main-section");
-    let sections = {};
-    let i = 0;
-
-    // console.log(navLinks[0].getAttribute("href"));
-
-  Array.prototype.forEach.call(section, function(e) {
-      console.log(e.offsetTop);
-    sections[e.id] = e.offsetTop;
-  });
-
-  console.log(sections);
-
-   window.onscroll = function() {
-    var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-
-    console.log(scrollPosition);
-    for (i in sections) {
-      if (sections[i] <= scrollPosition) {
-        document.querySelector('.is-active')[0].setAttribute('class', ' ');
-        document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
-      }
+    const options = {
+        sectionClass: '.main-section',     // Query selector to your sections
+        menuActiveTarget: '.nav-link', // Query selector to your elements that will be added `active` class
+        activeClass: 'is-active',
+        offset: 100                     // Menu item will active before scroll to a matched section 100px
     }
-  };
+
+    scrollSpy(document.getElementById('main-menu'), options)
 };
